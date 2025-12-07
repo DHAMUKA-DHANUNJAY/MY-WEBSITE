@@ -3,11 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Damuka Dhanunjay - Competitive Programming, C++, SDE, and System Design." />
   <title>Damuka Dhanunjay | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* ===== Global Styles ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    /* ===== Navbar ===== */
+    header {
+      width: 100%;
+      padding: 20px 50px;
+      background: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      top: 0;
+      z-index: 999;
+      backdrop-filter: blur(6px);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 600;
+      color: #00aaff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #00aaff;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 120px 50px;
+      text-align: center;
+      background: linear-gradient(135deg, #001f3f, #000);
+    }
+
+    .hero-text h1 {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .hero-text span {
+      color: #00aaff;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* ===== About Section ===== */
+    .about {
+      padding: 80px 50px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 32px;
+      color: #00aaff;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* ===== Contact Section ===== */
+    .contact {
+      padding: 80px 50px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 32px;
+      color: #00aaff;
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin: 10px;
+      transition: 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 32px;
+      }
+
+      header {
+        padding: 15px 25px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
   <!-- ===== Navigation ===== -->
   <header>
     <nav class="navbar">
@@ -15,7 +157,6 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -25,20 +166,7 @@
   <section id="home" class="hero">
     <div class="hero-text">
       <h1>Hi, I'm <span>Damuka Dhanunjay</span></h1>
-      <p>I’m passionate about <strong>Competitive Programming</strong>, <strong>C++</strong>, <strong>Software Development Engineering</strong>, and <strong>System Design</strong>.</p>
-
-      <!-- Social Media Icons Only -->
-      <div class="social-icons">
-        <a href="https://www.facebook.com/share/17MtE5HV74/" target="_blank">
-          <img src="assets/icons/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/dhanunjay_dhamuka?igsh=MTZ4aXhzZGNyN2Z0Zw==" target="_blank">
-          <img src="assets/icons/instagram.png" alt="Instagram">
-        </a>
-        <a href="https://github.com/DHAMUKA-DHANUNJAY" target="_blank">
-          <img src="assets/icons/github.png" alt="GitHub">
-        </a>
-      </div>
+      <p>I’m passionate about Competitive Programming, C++,and System Design.</p>
     </div>
   </section>
 
@@ -46,51 +174,29 @@
   <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      I enjoy building efficient and scalable software systems, solving challenging algorithmic problems, 
-      and continuously learning about system design and backend engineering.
-      My goal is to become a skilled Software Development Engineer capable of designing impactful technology solutions.
+      I enjoy building efficient and scalable software systems,
+      solving challenging algorithmic problems, and learning system design.
+      My goal is to become a skilled Software Development Engineer.
     </p>
-  </section>
-
-  <!-- ===== Projects Section ===== -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-container">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Responsive personal website built with HTML, CSS, and JavaScript showcasing my work and achievements.</p>
-      </div>
-      <div class="project-card">
-        <h3>Weather App</h3>
-        <p>A simple weather forecast app using OpenWeather API and modern UI components.</p>
-      </div>
-      <div class="project-card">
-        <h3>DSA Tracker</h3>
-        <p>A problem-solving tracker to monitor daily progress in Competitive Programming using C++.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Contact Section ===== -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Let’s connect for opportunities or collaborations!</p>
+  
     <div class="social-icons">
-      <a href="https://www.facebook.com/share/17MtE5HV74/" target="_blank">
-        <img src="assets/icons/facebook.png" alt="Facebook">
-      </a>
-      <a href="https://www.instagram.com/dhanunjay_dhamuka?igsh=MTZ4aXhzZGNyN2Z0Zw==" target="_blank">
-  <img src="instagram.png" alt="Instagram" width="40" height="40" style="border-radius: 50%;">
+
+  <a href="https://www.facebook.com/share/17MtE5HV74/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook">
+  </a>
+
+  <a href="https://www.instagram.com/dhanunjay_dhamuka" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+  </a>
+
+  <a href="https://github.com/DHAMUKA-DHANUNJAY" target="_blank">
+  <img src="https://img.icons8.com/ios-glyphs/60/ffffff/github.png" alt="GitHub">
 </a>
 
-      <a href="https://github.com/DHAMUKA-DHANUNJAY" target="_blank">
-        <img src="assets/icons/github.png" alt="GitHub">
-      </a>
-    </div>
-  </section>
 
-  <footer>
-    <p>© 2025 Damuka Dhanunjay | All Rights Reserved</p>
-  </footer>
+</div>
+
+
 </body>
 </html>
+
